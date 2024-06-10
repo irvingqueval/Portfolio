@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth, initial-scale=1">
+    <meta name="description" content="Mon portfolio de Développeur Web Full-Stack">
+    <title>Mon portfolio</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+    
+<body>
+    <nav class="navbar">
+        <img class="logo_navbar" src="/integration/img/Irving-Queval.jpeg" alt="Photo de Irving Queval">
+        <div class="nav_links">
+            <ul>
+                <li><a href="#Accueil">Accueil</a></li>
+                <li><a href="#Projets">Projets</a></li>
+                <li><a href="#Formation">Formation</a></li>
+                <li><a href="#A-propos">En savoir plus</a></li>
+                <li><a href="mailto:irvingqueval@gmail.com" target="_blank">Me Contacter</a></li>
+            </ul>
+        </div>
+        <img class="menu_hamburger" src="/integration/img/menu-btn.jpeg" alt="menu hamburger">
+    </nav>
+    <header class="header">
+        <div class="header_content" id="Accueil">
+            <h1 class="header_0">Irving Queval</h1>
+            <p class="cta_catch">Développeur Web Full-Stack</p>
+            <a href="#A-propos" class="btn btn_cta">En savoir plus ...</a>
+        </div>
+    </header>
+    <section id="Projets">
+        <h1>Mes Projets</h1>
+        <div class="img_projets">
+            <img class="hover-effect" src="/integration/img/600x400_red.jpeg" alt="Image de présentation du premier projet">
+            <img class="hover-effect" src="/integration/img/600x400_red.jpeg" alt="Image de présentation du deuxième projet">
+            <img class="hover-effect" src="https://placehold.co/600x400.jpeg" alt="Image de présentation du troisième projet">
+        </div>
+    </section>
+    <section id="Formation">
+        <h1>Formation</h1>
+        <img class="hover-effect" src="https://placehold.co/600x400.jpeg" alt="Photo de l'école ou Irving Queval à fait ses études et obtenu sont diplome">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam amet perferendis reiciendis saepe doloremque! Dicta ratione praesentium asperiores obcaecati libero voluptatum iste? Consequatur quis dolorum libero, consectetur maxime perferendis ducimus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam expedita minima ducimus possimus assumenda, vero officiis aperiam nesciunt harum dolor quos ea dolorum aut eos quisquam aspernatur corrupti illum facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti tempore nemo placeat repudiandae corporis officia recusandae, voluptates quibusdam ad maxime sed minus. Voluptas nobis laborum ducimus inventore dicta quibusdam?</p>
+    </section>
+    <section id="A-propos">
+        <h1>A propos de moi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam amet perferendis reiciendis saepe doloremque! Dicta ratione praesentium asperiores obcaecati libero voluptatum iste? Consequatur quis dolorum libero, consectetur maxime perferendis ducimus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam expedita minima ducimus possimus assumenda, vero officiis aperiam nesciunt harum dolor quos ea dolorum aut eos quisquam aspernatur corrupti illum facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti tempore nemo placeat repudiandae corporis officia recusandae, voluptates quibusdam ad maxime sed minus. Voluptas nobis laborum ducimus inventore dicta quibusdam?</p>
+    </section>
+    <!-- <section class="formulaire">
+        <form action="/traitement-formulaire" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
+                </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+            </ul>
+          </form>
+    </section> -->
+    <footer class="footer">
+        <div class="footer_content">
+            <p>&copy; 2024 Mon portfolio. Tous droits réservés.</p>
+            <p class="creator">Créé avec ❤ par Irving Queval</a></p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu_hamburger")
+    const navLinks = document.querySelector(".nav_links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile_menu')
+    })
+</script>
+
+</html>
