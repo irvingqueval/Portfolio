@@ -10,65 +10,81 @@
 </head>
     
 <body>
-    <nav class="navbar">
-        <img class="logo_navbar" src="/img/Irving-Queval.jpeg" alt="Photo de Irving Queval">
-        <div class="nav_links">
-            <ul>
-                <li><a href="#Accueil">Accueil</a></li>
-                <li><a href="#Projets">Projets</a></li>
-                <li><a href="#Formation">Formation</a></li>
-                <li><a href="mailto:irvingqueval@gmail.com" target="_blank">Me Contacter</a></li>
-            </ul>
-        </div>
-        <img class="menu_hamburger" src="/img/menu-burger-icone.svg" alt="menu hamburger">
-    </nav>
-    <header class="header">
-        <div class="header_content" id="Accueil">
-            <h1 class="header_0">Irving Queval</h1>
-            <p class="cta_catch">Développeur Web Full-Stack</p>
-            <a href="#A-propos" class="btn btn_cta">En savoir plus ...</a>
+    <header>
+        <img class="logo_navbar_mobile" src="/img/Irving-Queval.jpeg" alt="Photo de Irving Queval">
+        <nav class="navbar">
+            <img class="logo_navbar" src="/img/Irving-Queval.jpeg" alt="Photo de Irving Queval">
+            <div class="nav_links">
+                <ul>
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#Projets">Projets</a></li>
+                    <li><a href="#Formation">Formation</a></li>
+                    <li><a href="mailto:irvingqueval@gmail.com" target="_blank">Me Contacter</a></li>
+                </ul>
+            </div>
+            <img class="menu_hamburger" src="/img/menu-burger-icone.svg" alt="menu hamburger">
+        </nav>
+        <div class="header">
+            <div class="header_content" id="Accueil">
+                <h1 tabindex="0" class="header_0">Irving Queval</h1>
+                <p tabindex="0" class="cta_catch">Développeur Web Full-Stack</p>
+                <a href="#A-propos" class="btn btn_cta">En savoir plus ...</a>
+                <div class="social_media">
+                    <a href="#" class="btn_social"><img src="img/linkedin_logo.svg" alt=""></a>
+                    <a href="#"class="btn_social"><img src="img/github_logo.svg" alt=""></a>
+                </div>
+            </div>
         </div>
     </header>
     <section id="Projets">
-        <h1>Mes Projets</h1>
+        <h2 tabindex="0">Mes Projets</h2>
         <div class="projets_container">
-            <img class="hover_effect landing_ecommerce" src="/img/landing_page_ecommerce.jpeg" alt="Landing page e-commerce développer en VueJs avec une base de donnée MySQL">
-            <img class="hover_effect landing_restaurant" src="/img/landing_page_restaurant.jpeg" alt="Landing page d'un restaurant développer en angular">
-            <img class="hover_effect landing_wallet" src="/img/landing_wallet_crypto.jpeg" alt="Landing page d'un wallet de cryptomonaie développer en angular et symfoni avec une bade de donnée MongoDB">
+            <div class="card">
+                <img tabindex="0" class="hover_effect landing_ecommerce" src="/img/landing_page_ecommerce.jpeg" alt="Landing page e-commerce développer en VueJs avec une base de donnée MySQL">
+                <div class="card_techno">
+                    <img src="img/vuejs_logo.svg" alt="">
+                    <img src="img/mysql_logo.svg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <img tabindex="0" class="hover_effect landing_restaurant" src="/img/landing_page_restaurant.jpeg" alt="Landing page d'un restaurant développer en angular">
+                <div class="card_techno">
+                    <img src="img/angular_logo.svg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <img tabindex="0" class="hover_effect landing_wallet" src="/img/landing_wallet_crypto.jpeg" alt="Landing page d'un wallet de cryptomonaie développer en angular et symfoni avec une bade de donnée MongoDB">
+                <div class="card_techno">
+                    <img src="img/angular_logo.svg" alt="">
+                    <img src="img/symfony_logo.svg" alt="">
+                    <img src="img/mongodb_logo.svg" alt="">
+                </div>
+            </div>
         </div>
     </section>
     <section id="Formation">
-        <h1>Formation</h1>
+        <h2 tabindex="0">Formation</h2>
         <div class="formation_container">
             <div class="formation_img">
                 <img class="hover_effect logo_donkeyschool" src="img/logo_donkeyschool.jpeg" alt="Logo de l'école DonkeySchool ou j'ai obtenue mon diplôme de développeur web et mobille app">
             </div> 
             <div class="formation_paragraphe">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam amet perferendis reiciendis saepe doloremque! Dicta ratione praesentium asperiores obcaecati libero voluptatum iste? Consequatur quis dolorum libero, consectetur maxime perferendis ducimus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam expedita minima ducimus possimus assumenda, vero officiis aperiam nesciunt harum dolor quos ea dolorum aut eos quisquam aspernatur corrupti illum facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti tempore nemo placeat repudiandae corporis officia recusandae, voluptates quibusdam ad maxime sed minus. Voluptas nobis laborum ducimus inventore dicta quibusdam?</p>
+                <p tabindex="0">Diplomé de DonkeySchool lors de la promo de Mai 2024, j'ai obtenu mon titre professionel de développeur Web et Web Mobile.</p>
             </div>
         </div>
     </section>
     <section id="A-propos">
-        <h1>A propos de moi</h1>
+        <h2 tabindex="0">A propos de moi</h2>
         <div class="a_propos">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam amet perferendis reiciendis saepe doloremque! Dicta ratione praesentium asperiores obcaecati libero voluptatum iste? Consequatur quis dolorum libero, consectetur maxime perferendis ducimus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam expedita minima ducimus possimus assumenda, vero officiis aperiam nesciunt harum dolor quos ea dolorum aut eos quisquam aspernatur corrupti illum facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti tempore nemo placeat repudiandae corporis officia recusandae, voluptates quibusdam ad maxime sed minus. Voluptas nobis laborum ducimus inventore dicta quibusdam?</p>
+            <p tabindex="0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam amet perferendis reiciendis saepe doloremque! Dicta ratione praesentium asperiores obcaecati libero voluptatum iste? Consequatur quis dolorum libero, consectetur maxime perferendis ducimus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam expedita minima ducimus possimus assumenda, vero officiis aperiam nesciunt harum dolor quos ea dolorum aut eos quisquam aspernatur corrupti illum facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti tempore nemo placeat repudiandae corporis officia recusandae, voluptates quibusdam ad maxime sed minus. Voluptas nobis laborum ducimus inventore dicta quibusdam?</p>
         </div>
     </section>
     <footer class="footer">
         <div class="footer_content">
             <p>&copy; 2024 Mon portfolio. Tous droits réservés.</p>
-            <p class="creator">Créé avec ❤ par Irving Queval</a></p>
+            <p tabindex="0" class="creator">Créé avec ❤ par Irving Queval</a></p>
         </div>
     </footer>
+<script src="script.js"></script>
 </body>
-
-<script>
-    const menuHamburger = document.querySelector(".menu_hamburger")
-    const navLinks = document.querySelector(".nav_links")
-
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile_menu')
-    })
-</script>
-
 </html>

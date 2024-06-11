@@ -21,9 +21,33 @@ a {
 
 .btn {
     color: #1d1d1d;
-    background-color: white;
+    background-color: #FFCED6;
     padding: 10px 20px;
     border-radius: 4px;
+}
+
+.btn_cta {
+    background-color: #FFCED6;
+}
+
+.btn_social:hover , .btn_cta:hover {
+    background-color: whitesmoke;
+}
+
+.social_media {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.btn_social {
+    background-color: #FFCED6;
+    padding: 5px 15px;
+    display: flex;
+    border-radius: 4px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
@@ -34,16 +58,13 @@ a {
     top: 0;
     width: 100%;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.navbar ul li a , .header {
-    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar ul li a {
-    color: black;
+    color: white;
 }
+
 .navbar ul li a {
     padding: 15px;
     margin: 0 6px;
@@ -61,14 +82,19 @@ a {
 }
 
 .navbar ul li a:hover {
-    background-color: #FFCED6;
+    background-color: #64172B;
+    color: #FFCED6;
     border-radius: 4px;
 }
 
-.logo_navbar {
+.logo_navbar , .logo_navbar_mobile {
     height: 4rem;
     width: 4rem;
     border-radius: 100%;
+}
+
+.logo_navbar_mobile {
+    display: none;
 }
 
 .navbar .menu_hamburger {
@@ -80,7 +106,101 @@ a {
 }
 
 #Projets , #Formation , #A-propos , #Accueil {
-    scroll-margin-top: 105px;
+    scroll-margin-top: 108px;
+}
+
+.header {
+    background: url('/img/background_developpeur.jpeg') center/cover;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.header .header_content {
+    background-color: #00000085;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.header .header_content .header_0 {
+    padding-bottom: 12px;
+}
+
+.cta_catch {
+    font-size: 22px; margin-bottom: 22px ;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: #64172B;
+}
+
+.projets_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.landing_ecommerce , .landing_restaurant , .landing_wallet {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+.card_techno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.logo_donkeyschool {
+    width: 100%;
+}
+
+.formation_container {
+    display: flex;
+}
+
+.formation_img , .formation_paragraphe , .a_propos {
+    margin: 20px;
+}
+
+.formation_paragraphe {
+    display: flex;
+    align-items: center;
+}
+
+.a_propos {
+    text-align: center;
+}
+
+.footer .footer_content {
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.creator {
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 800px) {
@@ -88,7 +208,15 @@ a {
         padding: 0;
     }
 
-    .navbar .logo_navbar {
+    .logo_navbar {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+        display: none;
+    }
+
+    .logo_navbar_mobile {
+        display: block;
         position: absolute;
         top: 50px;
         left: 60px;
@@ -98,9 +226,16 @@ a {
         display: block;
     }
 
+    .menu_hamburger {
+        transform: scale(1.2);
+        background-color: #64172B;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
     .nav_links {
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.10);
+        background-color: rgba(0, 0, 0, 0.60);
         backdrop-filter: blur(10px);
         width: 100%;
         height: 100vh;
@@ -108,6 +243,10 @@ a {
         justify-content: center;
         margin-left: -100%;
         transition: all 0.5s ease;
+    }
+
+    .navbar ul li a{
+        color: white;
     }
 
     .nav_links.mobile_menu {
@@ -125,91 +264,30 @@ a {
     }
 } 
 
-.header {
-    background: url('/img/background_developpeur.jpeg') no-repeat center center/cover;
-    height: 100vh;
-    width: 100vw;
+@media screen and (max-width: 900px) {
+    .formation_container {
+        flex-direction: column;
+    }
+
+    .formation_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formation_paragraphe{
+        text-align: center;
+    }
 }
 
-.header .header_content {
-    background-color: #00000085;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
-}
+@media screen and (max-width: 425px) {
+    #Projets , #A-propos , #Accueil {
+        text-align: center;
+    }
 
-.btn_cta {
-    background-color: #FFCED6;
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
 }
-
-.btn_cta:hover {
-    background-color: #1d1d1d;
-    color: #FFCED6;
-}
-
-.header .header_content .header_0 {
-    padding-bottom: 12px;
-}
-
-.cta_catch {
-    font-size: 22px; margin-bottom: 22px ;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 55px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-top: 5px;
-}
-
-.projets_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-.landing_ecommerce , .landing_restaurant , .landing_wallet {
-    height: 400px;
-    width: 600px;
-    margin: 20px;
-}
-
-.formation_container {
-    display: flex;
-}
-
-.formation_img , .formation_paragraphe , .a_propos {
-    margin: 20px;
-}
-
-.formation_paragraphe {
-    display: flex;
-    align-items: center;
-}
-
-.footer .footer_content {
-    display:flex;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    padding: 5px;
-}
-
-.creator {
-    margin-left: 5px;
-}
-
-/* .hover_effect {
-    border-radius: 3px;
-}
-
-.hover_effect:hover {
-    opacity: 0.8;
-} */
