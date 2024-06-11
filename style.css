@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #FFF7F7;
@@ -61,11 +68,12 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.navbar ul li a {
+.navbar ul li button , .navbar ul li a {
     color: white;
+    font-size: 16px;
 }
 
-.navbar ul li a {
+.navbar ul li button , .navbar ul li a {
     padding: 15px;
     margin: 0 6px;
 }
@@ -81,7 +89,7 @@ a {
     align-items: center;
 }
 
-.navbar ul li a:hover {
+.navbar ul li button:hover , .navbar ul li a:hover {
     background-color: #64172B;
     color: #FFCED6;
     border-radius: 4px;
