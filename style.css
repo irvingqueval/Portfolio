@@ -299,3 +299,14 @@ h2 {
         text-align: center;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #201314;
+        color: #FED2E1;
+    }
+
+    img {
+        filter: grayscale(30%);
+    }
+}
