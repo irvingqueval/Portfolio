@@ -307,7 +307,7 @@ h2 {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #201314;
-        color: #FED2E1;
+        color: white;
     }
 
     img {
