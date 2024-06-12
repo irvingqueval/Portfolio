@@ -24,6 +24,8 @@ a {
 
 .header_0 {
     font-size: 86px; font-weight: 500;
+    width: 100%;
+    text-align: center;
 }
 
 .btn {
@@ -140,6 +142,8 @@ a {
 
 .cta_catch {
     font-size: 22px; margin-bottom: 22px ;
+    width: 100%;
+    text-align: center;
 }
 
 h2 {
@@ -287,7 +291,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 574px) {
     #Projets , #A-propos , #Accueil {
         text-align: center;
     }
@@ -308,5 +312,41 @@ h2 {
 
     img {
         filter: grayscale(30%);
+    }
+}
+
+h1 p {
+    overflow: hidden;
+}
+
+h1 span {
+    display: block;
+    transform: translateX(-200%);
+    position: relative;
+    overflow: hidden;
+    animation: 1s title_Animation cubic-bezier(0, 0.55, 0.45, 1) forwards;
+}
+
+@keyframes title_Animation {
+    to {
+        transform: initial;
+    }
+}
+
+.cta_catch {
+    overflow: hidden;
+}
+
+.cta_catch span {
+    display: block;
+    transform: translateX(200%);
+    position: relative;
+    overflow: hidden;
+    animation: 1s undertitle_Animation cubic-bezier(0, 0.55, 0.45, 1) forwards ;
+}
+
+@keyframes undertitle_Animation {
+    to {
+        transform: initial;
     }
 }
