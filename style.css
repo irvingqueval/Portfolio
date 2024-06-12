@@ -111,8 +111,8 @@ a {
     display: none;
     position: absolute;
     width: 40px;
-    top: 60px;
-    right: 60px;
+    top: 30px;
+    right: 30px;
 }
 
 #Projets , #Formation , #A-propos , #Accueil {
@@ -230,8 +230,8 @@ h2 {
     .logo_navbar_mobile {
         display: block;
         position: absolute;
-        top: 50px;
-        left: 60px;
+        top: 25px;
+        left: 25px;
     }
 
     .navbar .menu_hamburger {
