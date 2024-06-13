@@ -13,8 +13,4 @@ function scrollIntoViewWithOffset (selector, offset) {
         document.body.getBoundingClientRect().top -
         offset,
     })
-
-    if(selector !== '#A-propos'){
-        navLinks.classList.toggle('mobile_menu')
-    }
   }
