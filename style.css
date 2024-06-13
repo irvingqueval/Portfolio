@@ -39,10 +39,6 @@ a {
     background-color: #FFCED6;
 }
 
-.btn_social:hover , .btn_cta:hover {
-    background-color: whitesmoke;
-}
-
 .social_media {
     display: flex;
     gap: 20px;
@@ -89,12 +85,6 @@ a {
 .nav_links {
     display: flex;
     align-items: center;
-}
-
-.navbar ul li button:hover , .navbar ul li a:hover {
-    background-color: #64172B;
-    color: #FFCED6;
-    border-radius: 4px;
 }
 
 .logo_navbar , .logo_navbar_mobile {
@@ -235,6 +225,18 @@ h2 {
 
 .creator {
     margin-left: 5px;
+}
+
+@media screen and (min-width: 801px) {
+    .btn_social:hover , .btn_cta:hover {
+        background-color: whitesmoke;
+    }
+
+    .navbar ul li button:hover , .navbar ul li a:hover {
+        background-color: #64172B;
+        color: #FFCED6;
+        border-radius: 4px;
+    }   
 }
 
 @media screen and (max-width: 900px) {
