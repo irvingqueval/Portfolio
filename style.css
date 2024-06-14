@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +23,8 @@ a {
 }
 
 .header_0 {
-    font-size: 86px; font-weight: 500;
+    font-size: 86px; 
+    font-weight: 500;
     width: 100%;
     text-align: center;
 }
